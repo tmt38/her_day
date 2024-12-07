@@ -41,7 +41,6 @@ replyBtn.addEventListener("click", () => {
 function toggleMute() {
   const audioElement = document.getElementById('background-music');
   const button = document.getElementById('mute-unmute-btn');
-  const statusText = document.getElementById('mute-status');
   const volumeIcon = document.getElementById('volume-icon');
 
   // Toggle mute state
@@ -49,12 +48,10 @@ function toggleMute() {
     audioElement.muted = false;
     volumeIcon.classList.remove("fa-volume-mute");
     volumeIcon.classList.add("fa-volume-up");
-    statusText.textContent = "Unmuted";
   } else {
     audioElement.muted = true;
     volumeIcon.classList.remove("fa-volume-up");
     volumeIcon.classList.add("fa-volume-mute");
-    statusText.textContent = "Muted";
   }
 }
 
