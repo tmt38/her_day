@@ -49,7 +49,7 @@ footer {
 }
 
 .one {
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .one > img {
@@ -270,8 +270,14 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .one {
+    font-size: 3rem;
+  }
   .container {
     width: 90%;
+  }
+  .three {
+    font-size: 2rem;
   }
 
   .four .text-box {
@@ -305,7 +311,7 @@ footer {
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: lighter;
   }
 }
