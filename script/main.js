@@ -38,6 +38,22 @@ replyBtn.addEventListener("click", () => {
   backgroundMusic.play();
 });
 
+function toggleMute() {
+  const audioElement = document.getElementById('background-music');
+  const button = document.getElementById('mute-unmute-btn');
+  const statusText = document.getElementById('mute-status');
+
+  // Toggle mute state
+  if (audioElement.muted) {
+    audioElement.muted = false;
+    button.textContent = "Mute";
+    statusText.textContent = "Unmuted";
+  } else {
+    audioElement.muted = true;
+    button.textContent = "Unmute";
+    statusText.textContent = "Muted";
+  }
+}
 
 // Animation Timeline
 const animationTimeline = () => {
