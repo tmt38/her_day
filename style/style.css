@@ -328,4 +328,7 @@ footer {
   footer {
     font-size: 10px !important;;
   }
+  #mute-unmute-btn {
+    top: 30px;
+  }
 }
