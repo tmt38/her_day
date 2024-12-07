@@ -28,18 +28,15 @@ footer {
   box-sizing: border-box;
 }
 
+
 #mute-unmute-btn {
-  position: relative;
-  z-index: 9999; /* Ensure it's on top of other elements */
-}
-#mute-unmute-btn {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  padding: 10px;
+  position: fixed; /* Fix the button's position */
+  top: 10px; /* Position 10px from the top */
+  left: 10px; /* Position 10px from the left */
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 1000; /* Ensure the button is above other content */
 }
 
 .container div.six {
